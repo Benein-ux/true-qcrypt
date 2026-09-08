@@ -1,0 +1,25 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Core dumps & logs
+core.[0-9]*
+core.*.zst
+*.log
+
+# Streamlit temporary data
+.streamlit/secrets.toml
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

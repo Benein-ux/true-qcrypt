@@ -1,0 +1,12 @@
+[server]
+# Disable the file-watcher. Qiskit-Aer's native OpenMP threads conflict
+# with Streamlit's inotify/watchdog watcher causing a segmentation fault.
+fileWatcherType = "none"
+# NOTE: Do NOT set headless = true — it triggers a different startup
+# code path that races with Aer's OpenMP init and reinstates the crash.
+
+[runner]
+fastReruns = false
+
+[browser]
+gatherUsageStats = false
